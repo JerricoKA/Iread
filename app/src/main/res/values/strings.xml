@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Iread</string>
+    <string name="perinfo">个人信息</string>
+    <string name="selseat">选座</string>
+    <string name="reservation">预约选座</string>
+    <string name="sitting">设置</string>
+    <string name="about">关于</string>
+    <string name="main_top">致爱读书的你</string>
+</resources>
