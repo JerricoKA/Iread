@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setClass(MainActivity.this, PerInfActivity.class);
+                intent.setClass(MainActivity.this,PerInfActivity.class);
             }
         });
         /*跳转到选座界面

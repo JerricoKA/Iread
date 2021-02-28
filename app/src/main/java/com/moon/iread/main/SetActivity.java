@@ -1,13 +1,18 @@
 package com.moon.iread.main;
 
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import com.moon.iread.R;
+
 /**
- * @author：月
- * @Project : Iread
- * @File : SetActivity
- * @Package : com.moon.iread.main
- * @Date: 2021/2/22 上午 11:00
+ * @author 懵月
  */
+public class SetActivity extends AppCompatActivity {
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_set);
+    }
 
-public class SetActivity {
 }
