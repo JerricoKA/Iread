@@ -6,4 +6,9 @@
     <string name="sitting">设置</string>
     <string name="about">关于</string>
     <string name="main_top">致爱读书的你</string>
+    <string name="email">请输入邮箱</string>
+    <string name="password">请输入密码</string>
+    <string name="login">用户登录</string>
+    <string name="login_button">走你</string>
+    <string name="if_no_id">如果没有账号，点我也没啥用，没有注册系统</string>
 </resources>
