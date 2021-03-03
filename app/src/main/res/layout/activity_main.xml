@@ -6,8 +6,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="center_horizontal"
-        tools:context=".MainActivity"
->
+        tools:context=".MainActivity">
     <TextView
             android:id="@+id/library_top"
             android:layout_width="match_parent"
@@ -16,8 +15,7 @@
             android:gravity="center"
             android:text="@string/main_top"
             android:textSize="30sp"
-            android:textColor="#4B0082"
-            />
+            android:textColor="#4B0082"/>
     <Button
             android:id="@+id/personal_information"
             android:layout_width="300dp"
@@ -34,8 +32,7 @@
             android:id="@+id/blank1"
             android:layout_width="0dp"
             android:layout_height="0px"
-            android:layout_weight="0.2"
-    />
+            android:layout_weight="0.2"/>
     <Button
             android:id="@+id/seat_selection"
             android:layout_width="300dp"
@@ -52,8 +49,7 @@
             android:id="@+id/blank2"
             android:layout_width="0dp"
             android:layout_height="0px"
-            android:layout_weight="0.2"
-    />
+            android:layout_weight="0.2"/>
     <Button
             android:id="@+id/reservation"
             android:layout_width="300dp"
@@ -70,11 +66,10 @@
             android:id="@+id/blank3"
             android:layout_width="0dp"
             android:layout_height="0px"
-            android:layout_weight="0.2"
-    />
+            android:layout_weight="0.2"/>
     <Button
             android:id="@+id/set"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="0px"
             android:layout_weight="1"
             android:drawableLeft="@drawable/setting"
@@ -82,16 +77,16 @@
             android:drawablePadding="10dp"
             android:text="@string/sitting"
             android:textSize="20sp"
-            android:gravity="center_vertical" android:drawableStart="@drawable/setting"/>
+            android:gravity="center_vertical"
+            android:drawableStart="@drawable/setting"/>
     <Button
             android:id="@+id/blank4"
             android:layout_width="0dp"
             android:layout_height="0px"
-            android:layout_weight="0.2"
-    />
+            android:layout_weight="0.2"/>
     <Button
             android:id="@+id/about"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="0px"
             android:layout_weight="1"
             android:drawableLeft="@drawable/about"
@@ -105,6 +100,5 @@
             android:id="@+id/black"
             android:layout_width="0dp"
             android:layout_height="0px"
-            android:layout_weight="1"
-            />
+            android:layout_weight="1"/>
 </LinearLayout>
