@@ -1,6 +1,7 @@
 package com.moon.iread;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -8,6 +9,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import com.moon.iread.main.*;
 
+import static com.moon.iread.ui.StatusBar.setStatusBarLightMode;
 /**
  * @author 懵月
  */
@@ -24,8 +26,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mainTextview = this.findViewById(R.id.library_top);
-        /*跳转到个人信息页面
-         * */
+        /*状态栏沉浸*/
+        getWindow().setStatusBarColor(Color.TRANSPARENT);
+        setStatusBarLightMode(MainActivity.this,true);
+        /*跳转到个人信息页面*/
         perinfo = this.findViewById(R.id.personal_information);
         perinfo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,8 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 overridePendingTransition(R.anim.anim_in,R.anim.anim_out);
             }
         });
-        /*跳转到选座界面
-         * */
+        /*跳转到选座界面*/
         seatsel = this.findViewById(R.id.seat_selection);
         seatsel.setOnClickListener(new View.OnClickListener() {
             @Override

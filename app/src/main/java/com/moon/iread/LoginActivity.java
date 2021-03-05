@@ -1,25 +1,21 @@
 package com.moon.iread;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
-import android.os.Build;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.InputType;
 import android.text.Selection;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-import androidx.annotation.ColorRes;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import static com.moon.iread.ui.StatusBar.setStatusBarLightMode;
 
 
 /**
@@ -35,6 +31,10 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        /*状态栏沉浸*/
+        getWindow().setStatusBarColor(Color.TRANSPARENT);
+        setStatusBarLightMode(LoginActivity.this,true);
+
         edPassword = this.findViewById(R.id.password);
         /*显示为密码*/
         edPassword.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
@@ -69,4 +69,8 @@ public class LoginActivity extends AppCompatActivity {
             return m.matches();
         }
     }
+
+
+
+
 }
