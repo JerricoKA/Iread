@@ -1,9 +1,8 @@
 package com.moon.iread.main;
 
 import android.graphics.Color;
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import com.moon.iread.MainActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import com.moon.iread.R;
 
 import static com.moon.iread.ui.StatusBar.setStatusBarLightMode;

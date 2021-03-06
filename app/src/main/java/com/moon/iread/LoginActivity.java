@@ -47,9 +47,10 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 edEmail = findViewById(R.id.email);
                 Intent intent = new Intent();
-                intent.setClass(LoginActivity.this,MainActivity.class);
+                intent.setClass(LoginActivity.this, MainActivity.class);
                 if (isEmail(edEmail.getText().toString().trim())){
                     if (!"".equals(edPassword.getText().toString().trim())){
+                        intent.putExtra("setflag","NONE");
                         startActivity(intent);
                     }else {
                         Toast.makeText(LoginActivity.this, "密码错误", Toast.LENGTH_SHORT).show();
